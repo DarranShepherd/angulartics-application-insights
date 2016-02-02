@@ -1,0 +1,15 @@
+{
+  "name": "angulartics-application-insights",
+  "main": "lib/angulartics-application-insights.js",
+  "dependencies": {
+    "angulartics": "~1.0.0"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "example",
+    "package.json",
+    "lib/index.js"
+  ]
+}

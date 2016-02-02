@@ -1,0 +1,33 @@
+{
+  "name": "angulartics-application-insights",
+  "version": "0.0.1",
+  "description": "Microsoft Application Insights plugin for Angulartics",
+  "keywords": [
+    "application",
+    "insights",
+    "plugin",
+    "angular",
+    "angulartics"
+  ],
+  "author": "Darran Shepherd <darran@darranshepherd.co.uk> (https://github.com/darranshepherd)",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "mkdir -p dist && uglifyjs lib/angulartics-application-insights.js --compress --source-map dist/angulartics-application-insights.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-application-insights.min.js.map -o dist/angulartics-application-insights.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darranshepherd/angulartics-application-insights"
+  },
+  "bugs": {
+    "url": "https://github.com/darranshepherd/angulartics-application-insights/issues"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "angulartics": "~1.0.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.4.23"
+  }
+}
