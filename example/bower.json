@@ -1,0 +1,16 @@
+{
+  "name": "angulartics-application-insights-example",
+  "private": true,
+  "authors": [
+    "Darran Shepherd <darran@darranshepherd.co.uk> (https://github.com/darranshepherd)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/DarranShepherd/angulartics-application-insights",
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-ui-router": "ui-router#^0.2.17",
+    "angulartics": "^1.0.3",
+    "angulartics-application-insights": "^0.1.0",
+    "bootstrap": "^3.3.6"
+  }
+}

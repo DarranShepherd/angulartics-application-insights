@@ -1,0 +1,14 @@
+{
+  "name": "angulartics-application-insights-example",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "npm install && bower install && http-server"
+  },
+  "author": "Darran Shepherd <darran@darranshepherd.co.uk> (https://github.com/darranshepherd)",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "http-server": "^0.8.5"
+  }
+}

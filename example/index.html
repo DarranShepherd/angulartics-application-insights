@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Angulartics Application Insights Example</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+        }({
+            instrumentationKey:"4d682ecf-13e7-4bfe-81bf-b79b54750542"
+        });
+        
+        window.appInsights=appInsights;
+    </script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/angulartics/dist/angulartics.min.js"></script>
+    <script src="/bower_components/angulartics-application-insights/dist/angulartics-application-insights.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl as main">
+    <h1>Angulartics Application Insights Example</h1>
+    <p></p><input ng-model="main.userId"/><button ng-click="main.setUserId()">Set User ID</button></p>
+    <p><button analytics-on analytics-event="CustomEvent">Custom Event</button></p>
+    <nav>
+      <ul>
+        <li><a ui-sref="page({id: 1})">Page 1</a></li>
+        <li><a ui-sref="page({id: 2})">Page 2</a></li>
+        <li><a ui-sref="page({id: 3})">Page 3</a></li>
+      </ul>
+    </nav>
+    <ui-view></ui-view>
+  </body>
+
+</html>

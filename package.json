@@ -1,6 +1,6 @@
 {
   "name": "angulartics-application-insights",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Microsoft Application Insights plugin for Angulartics",
   "keywords": [
     "application",
